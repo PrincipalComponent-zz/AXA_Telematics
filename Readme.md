@@ -81,7 +81,7 @@ The 6 individual models are written to the `Models` folder and are in a submitta
 
 ## Trip Matching
 
-To run our trip matching routine `cd` to the `RDP_Trip_Matching` folder and execute
+To run our trip matching routine `cd` to the `RDP_Trip_Matching` and the `RDP_Trip_Matching_Old`  folder and execute
 
     Run_Trip_Matching
     
