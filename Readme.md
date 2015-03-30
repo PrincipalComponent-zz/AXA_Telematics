@@ -13,6 +13,26 @@ The dataset provided by AXA comprised around half a million trips by roughly 270
 
 ***
 
+# Summary
+
+We tackled the problem by combining the results of a trip matching algorithm and driver signature models. The objective was to identify frequently taken trips as they are likely to be trips from the respective driver and apply supervised models to telematic features extracted from GPS data to produce probabilistic output. We built ensembles of different models in both streams and one factor that was probably responsible for our success was the extensive combination of these solutions.
+
+Trip matching was based on an ensemble of runs of the Douglas-Peucker algorithm applied at different sensitivities.
+  Our final telematics model consisted of an ensemble of 6 different models. We mainly used Random Forests, in combination with Gradient Boosting and Logistic Regression. We trained models on different feature sets and combinations of those feature sets. For each feature set we selected the algorithm (out of our candidates) that yielded the best result on the LB as we expected the LB to be quite informative in this competition. The weights for the ensemble we choose arbitrarily informed by the performance of the individual models.
+
+These are the models we used for the winning solution:
+
+1.  Gradient Boosting Machine (feature set 3)
+1.  Random Forest (feature set 3)
+1.  An ensemble of Random Forest and Logistic Regression (feature set 1)
+1.  Random Forest  (feature sets 1 and 3 combined)
+1.  GBM in R (feature set 3)
+1.  Random Forest (feature set 2)
+
+The final telematics model did pretty well and scored 0.91375 (Private score). In combination with our trip matching we increased the final AUC score of 0.97398 which ensured us 2nd place.
+
+![](https://cloud.githubusercontent.com/assets/8686177/6716565/4ceac948-cd9e-11e4-9eb7-12fe8158a100.png)
+
 # How to generate the solution
 
 In order to replicate the winning solution, just follow the few steps below.
