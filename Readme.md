@@ -31,7 +31,7 @@ These are the models we used for the winning solution:
 
 The final telematics model did pretty well and scored 0.91375 (Private score). In combination with our trip matching we increased the final AUC score of 0.97398 which ensured us 2nd place.
 
-![](https://cloud.githubusercontent.com/assets/8686177/6716565/4ceac948-cd9e-11e4-9eb7-12fe8158a100.png)
+![modelling](https://cloud.githubusercontent.com/assets/8686177/6899255/22c88044-d6f7-11e4-892c-46c654d18f6e.png)
 
 # How to generate the solution
 
