@@ -3,7 +3,7 @@
 
 Team:                    **Driving It**
 
-Team members:            Scott H, TheKeymaker, Dr. Gigabit
+Team members:            Scott Hartshorn (Scott H), Janto Oellrich (TheKeymaker), Andrei Varanovich (Dr. Gigabit)
 
 This repository contains our 2nd prize winning solution to [**AXA Driver Telematics Analysis competition**](https://www.kaggle.com/c/axa-driver-telematics-analysis) 
 hosted on kaggle.com.
@@ -29,7 +29,8 @@ These are the models we used for the winning solution:
 1.  GBM in R (feature set 3)
 1.  Random Forest (feature set 2)
 
-The final telematics model did pretty well and scored 0.91375 (Private score). In combination with our trip matching we increased the final AUC score of 0.97398 which ensured us 2nd place.
+The final telematics model did pretty well and scored 0.91375 (Private score). Combining this with our trip matching
+results increased the final AUC score to 0.97398 which ensured us 2nd place.
 
 ![modelling](https://cloud.githubusercontent.com/assets/8686177/6899255/22c88044-d6f7-11e4-892c-46c654d18f6e.png)
 
@@ -60,9 +61,12 @@ To extract the features, go to the `Features` folder and run
 
       extract_features
 
-This will create the three feature matrices `featurematrix1.csv`,  `featurematrix2.csv `and  `featurematrix3.csv`. You can also create the matrices individually by running (e.g. for feature set 1)
+This will create the three feature matrices `featurematrix1.csv`,  `featurematrix2.csv `and  `featurematrix3.csv`. You can also create the matrices individually by running (e.g. for feature set 3)
 
-      python generate_featureSet1.py
+      python generate_featureSet3.py
+
+In order to generate feature set 1, the raw GPS files need to be converted to `.npy` files which makes training a lot
+faster. To do this, execute `python csvToNpy.py` which will write `.npy`copies of the `.csv` files to the data folders.
 
 ### Modelling
 

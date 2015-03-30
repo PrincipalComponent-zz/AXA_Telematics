@@ -1,12 +1,3 @@
-# AXA Driver Telematics Analysis
-## 2nd prize winning solution
-
-Team:                    **Driving It**
-
-Team members:            Scott H, TheKeymaker, Dr. Gigabit
-
-***
-
 This documents the Jitter Count, i.e. the sort runs less than 90 meters from the starting point
 
 

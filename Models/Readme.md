@@ -1,1 +1,1 @@
-# This is where the trained models go
+# This folder contains all individual model outputs.
