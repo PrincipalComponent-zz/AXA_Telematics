@@ -3,7 +3,7 @@
 
 Team:                    **Driving It**
 
-Team members:            Scott Hartshorn (Scott H), Janto Oellrich (TheKeymaker), Andrei Varanovich (Dr. Gigabit)
+Team members:            **Scott Hartshorn** (Scott H), **Janto Oellrich** (TheKeymaker), **Andrei Varanovich** (Dr. Gigabit)
 
 This repository contains our 2nd prize winning solution to [**AXA Driver Telematics Analysis competition**](https://www.kaggle.com/c/axa-driver-telematics-analysis) 
 hosted on kaggle.com.
