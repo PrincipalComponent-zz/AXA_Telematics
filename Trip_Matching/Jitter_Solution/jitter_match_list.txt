@@ -16,3 +16,14 @@ Driver 1      num jitter           18
 Driver 2      num jitter           2
 Driver 3      num jitter           3
 Driver 11      num jitter           2
+Driver 1      num jitter           18
+Driver 2      num jitter           2
+Driver 3      num jitter           3
+Driver 10      num jitter           4
+Driver 11      num jitter           2
+Driver 12      num jitter           24
+Driver 13      num jitter           5
+Driver 14      num jitter           13
+Driver 15      num jitter           7
+Driver 16      num jitter           2
+Driver 17      num jitter           1
