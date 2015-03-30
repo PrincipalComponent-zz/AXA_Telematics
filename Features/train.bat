@@ -8,4 +8,3 @@ train_taijanto
 
 train_tai
 
-train_GBM_R.R
