@@ -1,13 +1,4 @@
-# AXA Driver Telematics Analysis
-## 2nd prize winning solution
-
-Team:                    **Driving It**
-
-Team members:            Scott H, TheKeymaker, Dr. Gigabit
-
-***
-
-This document the RDP based trip matching
+This documents the RDP based trip matching
 
 
 ## Summary
