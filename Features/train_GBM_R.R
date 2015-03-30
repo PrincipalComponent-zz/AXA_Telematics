@@ -1,5 +1,4 @@
-#!/usr/bin/env Rscript
-library(doParallel)
+#library(doParallel) # uncomment this for parallel processing
 library(caret)
 library(survival)
 library(plyr)
@@ -7,6 +6,9 @@ library(splines)
 library(rjson)
 
 # get location of SETTINGS.json
+
+#setwd("") # set this to the "feature folder"
+
 curDir = getwd()
 parts = strsplit(curDir,"/")
 parentDir = paste(parts[[1]][1:(length(parts[[1]])-1)],collapse="/")
@@ -28,7 +30,8 @@ drivers = list.files(paste(blockfolder,"features",sep="/"),pattern="^telematics"
 
 allDrivers <- do.call("rbind", lapply(drivers, read.csv, header = TRUE))
 allDrivers$DR <- NULL
-registerDoParallel(4,cores=4)
+# registerDoParallel(4,cores=4) # again, parallel processing
+
 for(i in 1:3700){
   tryCatch({
     print(paste("Driver",i))
@@ -58,10 +61,13 @@ for(i in 1:3700){
                      verbose = FALSE)
     gbmFit1
     res <- predict(gbmFit1, newdata = driver, type = "prob")
-    write.csv(res, file = paste(blockfolder,"results",i,".csv", sep=""))
+    write.csv(res, file = paste(blockfolder,"/results/","Driver",i,".csv", sep=""))
   }, error = function(e) {
     print(e)
   }, finally = {} )
-  
-print("GBM in R completed...")
 }
+
+#Creating a combined file
+probabilitiesFiles <- list.files(path=paste(blockfolder,"/results/",sep=""),pattern="^Driver")
+probabilities <- do.call("rbind", lapply(probabilitiesFiles, read.csv, header = TRUE))
+write.csv(probabilities, file = paste(PATHS$ROOT,"Models", "R_Probabilities.csv", sep="/")) 
