@@ -74,10 +74,12 @@ All our models can be run by
 
      train
 
-The 6 individual models are written to the `Models` folder and are in a submittable format. The file
-`train_GBM_R.R` has to be run independently (change the marked path inside the file before running).
+The 6 individual models are written to the `Models` folder and are in a submittable format. You can also run models
+individually by executing (e.g. for a GBM on feature set 2)
 
-
+      python train_featureSet2.py
+      
+The file `train_GBM_R.R` has to be run independently (change the marked path inside the file before running).
 
 ## Trip Matching
 
