@@ -1,0 +1,1 @@
+f2py -c -m search_matches search_matches.f90 --compiler=mingw32
