@@ -66,5 +66,5 @@ def break_input_file_features(feature_file):
 
 
    
-feature_file = os.path.join(FEATURES,"Scott_Features_2.csv") 
+feature_file = os.path.join(FEATURES,"featurematrix2.csv") 
 break_input_file_features(feature_file)  
