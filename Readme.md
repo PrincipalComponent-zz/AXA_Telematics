@@ -1,7 +1,7 @@
 # AXA Driver Telematics Analysis
 ## 2nd prize winning solution
 
-Team:                    **Driving It**
+Team:                    **Driving It**  - contact: Janto Oellrich (joellrich@uos.de)
 
 Team members:            **Scott Hartshorn** (Scott H), **Janto Oellrich** (TheKeymaker), **Andrei Varanovich** (Dr. Gigabit)
 
