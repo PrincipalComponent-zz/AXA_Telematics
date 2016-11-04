@@ -13,7 +13,7 @@ The dataset provided by AXA comprised around half a million trips by roughly 270
 
 NOTE:
 By [AXA's competition rules](https://www.kaggle.com/c/axa-driver-telematics-analysis/rules)
- I am not permitted to share the data with persons who did not participate in the challenge. Sorry for that.
+ I am not permitted to share the data with persons who did not participate in the challenge.
 
 ***
 
