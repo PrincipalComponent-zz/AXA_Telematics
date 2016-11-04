@@ -11,6 +11,10 @@ hosted on kaggle.com.
 The goal of this challenge was to infer from unlabeled GPS data whether a trip was driven by a given driver or not.
 The dataset provided by AXA comprised around half a million trips by roughly 2700 drivers.
 
+NOTE:
+By [AXA's competition rules](https://www.kaggle.com/c/axa-driver-telematics-analysis/rules)
+ I am not permitted to share the data with persons who did not participate in the challenge. Sorry for that.
+
 ***
 
 # Summary
